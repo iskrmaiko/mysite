@@ -15,7 +15,10 @@ var captionText = document.getElementById("caption");
 
 });
 
-
+$(".overlay").click(function() {
+var img= $(this).siblings(".illust")
+img.trigger('click');
+})
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
